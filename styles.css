@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ details {
+    margin-top:30px;
+    margin-left:30px;
+    margin-right:30px;
+    text-align:center;
+ }
+ summary {
+    margin-top:30px;
+    margin-left:30px;
+    margin-right:30px;
+    font-size: 20px;
+ }
+body {
+    min-height: 100vh;
+    padding-left: 290px;
+    color: #000000;
+    background: linear-gradient(135deg, #ADD8E6, #9DC183);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+    h3 {
+        text-align: center;
+       margin-top: 30px;
+      
+    }
+img {
+    width: min(900px, 100%);
+    height: auto;
+    margin: 30px 0;
+}
+    h2 {
+        margin-top:30px;
+    }
+h1 {
+    margin-top: 40px;
+}
+
+.pill {
+    width: min(430px, calc(100vw - 32px));
+    height: 50px;
+    margin-top: 50px;
+    background-color: #20B2AA;
+    border-radius: 25px; /* Metade da altura para efeito pill */
+    display: inline-block;
+    text-align: center;
+    line-height: 50px; /* Centraliza o texto verticalmente */  
+}
+
+.pill-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* MENU LATERAL */
+
+.menu {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #222222;
+    padding: 30px 20px;
+}
+
+.menu a {
+    display: block;
+    margin-bottom: 12px;
+    padding: 15px;
+    color: white;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #20B2AA;
+}
+
+main {
+    margin-left: 250px;
+    padding: 40px;
+}
+
+section {
+    display: none;
+    min-height: 100vh;
+    padding: 50px 24px;
+}
+
+section:target {
+    display: block;
+}
+
+body:not(:has(section:target)) section:first-of-type {
+    display: block;
+}
+.caixa {
+    width: min(500px, 100%);
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ADD8E6, #9DC183);
+    text-align: left;
+}
+.caixa summary {
+   font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+.caixa h3 {
+    padding: 0 10px;
+}
+.caixa h2 {
+    text-align: center;
+    margin-top:10px;
+    margin-left:15px;
+    margin-right:15px;
+}
